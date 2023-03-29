@@ -3,6 +3,8 @@ import './App.css';
 import { useState } from 'react';
 import imagemCachorro from './assets/cachorro.jpg';
 import imagemGato from './assets/gato.jpg';
+import CardAnimal from './componentes/CardAnimal';
+import CardInformacoes from './componentes/CardInformacoes';
 
 export default function App() {
   let imagemAnimal = "";
@@ -39,15 +41,10 @@ export default function App() {
       </header>
   
       {/* Componente CardAnimal */}
-      <div id="CardAnimal">
-        <img src={imagemAnimal} alt="animal" />
-      </div>
+      <CardAnimal imagemAnimal={imagemAnimal}/>
   
       {/* Componente CardInformacoes */}
-      <div className='CardInformacao'>
-        <h3>Informação sobre o {tipoAnimal}</h3>
-        <p>{informacaoAnimal}</p>
-      </div>
+      <CardInformacoes tipoAnimal={tipoAnimal} informacaoAnimal={informacaoAnimal}/>
     </div>
   );
 }
