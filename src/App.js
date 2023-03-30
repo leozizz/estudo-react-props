@@ -5,9 +5,6 @@ import CardAnimal from './componentes/CardAnimal';
 import CardInformacoes from './componentes/CardInformacoes';
 
 export default function App() {
-  let imagemAnimal = "";
-  let informacaoAnimal = "";
-  let tipoAnimal = "Cachorro"
 
   const [tipoDoComponenteCard, setTipoDoCompomenteCard] = useState("cachorro");
 
