@@ -2,6 +2,12 @@
 
 Esta é uma aplicação React que utiliza os hooks **'useState'** e **'props'** para alternar entre dois componentes que exibem informações e imagens de um cachorro e de um gato.
 
+## Prints da Aplicação
+
+Veja abaixo um Preview da aplicação em funcionamento.
+
+![Aplicação React](./public/assets/AppPreview.gif)
+
 ## Como utilizar
 
 Para executar a aplicação em sua máquina local, siga os passos abaixo:
