@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import CardAnimal from './componentes/CardAnimal';
 import CardInformacoes from './componentes/CardInformacoes';
+import Topo from './componentes/Topo';
 
 export default function App() {
 
@@ -19,11 +20,7 @@ export default function App() {
   return (
     <div className='App'>
       {/* componente Topo */}
-      <header>
-        <h1>Projeto Props + useState</h1>
-        <p>Clique no botão para mudar os componentes abaixo</p>
-        <button onClick={alterarState}>Mudar Animal</button>
-      </header>
+      <Topo clickBotao={alterarState}/>
   
       {/* Componente CardAnimal */}
       <CardAnimal tipoAnimal={tipoDoComponenteCard}/>
