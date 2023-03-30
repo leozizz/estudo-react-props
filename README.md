@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Aplicação React com Props e useState
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta é uma aplicação React que utiliza os hooks **'useState'** e **'props'** para alternar entre dois componentes que exibem informações e imagens de um cachorro e de um gato.
 
-## Available Scripts
+## Como utilizar
 
-In the project directory, you can run:
+Para executar a aplicação em sua máquina local, siga os passos abaixo:
 
-### `npm start`
+1. Faça o download ou clone o repositório em sua máquina.
+2. Certifique-se de que possui o Node.js e o npm instalados em sua máquina.
+3. Abra o terminal na pasta raiz do projeto.
+4. Execute o comando **npm install** para instalar todas as dependências do projeto.
+5. Execute o comando **npm start** para iniciar a aplicação.
+6. Abra o navegador e acesse a URL **http://localhost:3000/** para visualizar a aplicação.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Caso ocorra algum erro durante a execução, certifique-se de que seguiu todos os passos corretamente e tente novamente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Componentes
+### App.js
 
-### `npm test`
+O componente principal **'App.js'** é responsável por renderizar a aplicação. Ele utiliza o hook **'useState'** para armazenar o tipo do animal que será exibido nos componentes **'CardAnimal'** e **'CardInformacoes'**. O componente **'Topo'** é renderizado acima dos outros componentes e possui um botão que alterna entre os tipos de animais. Por fim, os componentes **'CardAnimal'** e **'CardInformacoes'** são renderizados de acordo com o tipo de animal selecionado.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Topo
 
-### `npm run build`
+O componente **'Topo'** exibe um título e uma descrição, além de um botão que permite alternar entre os componentes **'CardAnimal'** e **'CardInformacoes'**. O botão é uma propriedade que recebe uma função de alteração de estado.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### CardInformacoes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+O componente **'CardInformacoes'** exibe informações sobre o animal selecionado. Ele utiliza uma estrutura condicional para verificar qual animal foi selecionado e renderizar as informações corretas. As informações são passadas para o componente através das props.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### CardAnimal
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+O componente **'CardAnimal'** exibe uma imagem do animal selecionado. Ele também utiliza uma estrutura condicional para verificar qual animal foi selecionado e renderizar a imagem correta. A imagem é passada para o componente através das props.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Conclusão
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Essa aplicação React utiliza os hooks **'useState'** e **'props'** para criar uma aplicação simples que alterna entre dois tipos de animais. É possível utilizar essa aplicação como base para projetos mais complexos que utilizam esses hooks para gerenciar estados e passar informações entre componentes.
